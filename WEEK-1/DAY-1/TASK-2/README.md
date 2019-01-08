@@ -1,7 +1,7 @@
 ##### Task : To Develop and execute Basic Calculator using java commands in cmd-promt
 Commands  used : 
-+ javac <filename>.java
-+ java -cp .\ <classname>
++ javac filename.java
++ java classname
 
 
 ##### Output
