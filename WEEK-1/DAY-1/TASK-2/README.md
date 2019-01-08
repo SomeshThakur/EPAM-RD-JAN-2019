@@ -5,7 +5,7 @@ Commands  used :
 
 
 ##### Output
-![Output](https://i.imgur.com/IZIvtMP.png)
+![Output](https://i.imgur.com/jfy6ZXS.png)
 
 ###### Known Isuue
 + Handle Mismatch Input 
