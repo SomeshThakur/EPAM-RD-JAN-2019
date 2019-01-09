@@ -4,7 +4,8 @@ import Task1.Student;
 public final class StudentManagement{
 	protected final List<Student> students;
 
-	public StudentManagement(final List<Student> students){
+	public StudentManagement(final List<Student> students){\
+		/*Even if the list is final its modifiable, so we use Collection.unmodifiable to acheive immutablity*/
 		this.students=Collections.unmodifiableList(students);
 	}
 

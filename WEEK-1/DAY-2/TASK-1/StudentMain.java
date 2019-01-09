@@ -7,10 +7,18 @@ public class StudentMain {
 
 	protected final static List<Student> initializeStudents(){
 		List<Student> students = new ArrayList<>();
-		Student s1 = new Student("Emily",23);
-		Student s2 = new Student("Brock",23);
-		students.add(s1);
-		students.add(s2);
+		Student student1 = new Student("Emily", 23);
+		Student student2 = new Student("Brock", 25);
+		Student student3 = new Student("Jack", 21);
+		Student student4 = new Student("Rock", 22);
+		Student student5 = new Student("Jeny", 25);
+		Student student6 = new Student("David", 26);
+		students.add(student1);
+		students.add(student2);
+		students.add(student3);
+		students.add(student4);
+		students.add(student5);
+		students.add(student6);
 		return students;
 	} 
 	public static void main(String[] args){
