@@ -12,17 +12,19 @@ public class Matrix {
 			System.out.println("Enter Matrix elements : ");
 			int matrix[][] = m.readMatrix(row, col, scan);
 			System.out.println("The Matrix elements are ");
-			displayMatrix(matrix, row, col);
+			System.out.println(displayMatrix(matrix));
 		}
 	}
 
-	private static void displayMatrix(int[][] matrix, int row, int col) {
-		for (int rowIndex = 0; rowIndex < row; rowIndex++) {
-			for (int colIndex = 0; colIndex < col; colIndex++) {
-				System.out.print(matrix[rowIndex][colIndex] + " ");
+	private static String displayMatrix(int[][] matrix) {
+		StringBuffer sb = new StringBuffer();
+		for (int rowIndex = 0; rowIndex < matrix.length; rowIndex++) {
+			for (int colIndex = 0; colIndex < matrix[rowIndex].length; colIndex++) {
+				sb.append(matrix[rowIndex][colIndex] + " ");
 			}
-			System.out.println();
+			sb.append("\n");
 		}
+		return sb.toString();
 
 	}
 

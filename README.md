@@ -16,3 +16,12 @@
 | Task-2      | SOLID Converter   |  [More Info](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-2) |
 | Task-3      | Immutable Planet   |  [More Info](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-3) |
 
+- [Day 3](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3)
+
+| Tasks        | Description           | Links  |
+| ------------- |:-------------:| -----:|
+| Task-1      | Array Sum and Avg | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3/TASK-1) |
+| Task-1      | String Concatation | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3/TASK-2) |
+| Task-1      | Degree Converter | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3/TASK-3) |
+| Task-1      | Custom Annotation | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3/TASK-4) |
+| Task-1      | Pretty Print 2D Array | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-3/TASK-5) |
