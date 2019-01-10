@@ -61,9 +61,11 @@ public class ConverterMain {
 
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
+		System.out.println("FROM");
 		printer();
 		if (init() == -1)
 			return;
+		System.out.println("TO");
 		printer();
 		Converter converter = new Converter();
 		conversion(converter);
