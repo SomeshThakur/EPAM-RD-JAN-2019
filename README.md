@@ -14,5 +14,5 @@
 | ------------- |:-------------:| -----:|
 | Task-1      | Immutable StudentManagement | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-1) |
 | Task-2      | SOLID Converter   |  [More Info](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-2) |
-| Task-2      | Immutable Planet   |  [More Info](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-3) |
+| Task-3      | Immutable Planet   |  [More Info](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-1/DAY-2/TASK-3) |
 
