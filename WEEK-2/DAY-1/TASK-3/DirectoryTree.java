@@ -16,7 +16,7 @@ public class DirectoryTree extends SimpleFileVisitor<Path> {
 
 	@Override
 	public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
-		printDepthDelim("	");
+		printDepthDelim("|	");
 		System.out.println("+-	" + dir.getFileName() + "/");
 		depth++;
 		return super.preVisitDirectory(dir, attrs);
@@ -24,9 +24,10 @@ public class DirectoryTree extends SimpleFileVisitor<Path> {
 
 	@Override
 	public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+
+		printDepthDelim("|	");
+		System.out.println();
 		depth--;
-		printDepthDelim("	");
-		System.out.println("|");
 		return super.postVisitDirectory(dir, exc);
 	}
 
