@@ -1,29 +1,32 @@
-import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class Console {
 
-    public Shape getShape(HashMap<String, Shape> shapesList) {
+    public Shape getShape(List<String> shapesList)
+	    throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 
 	if (shapesList.isEmpty()) {
 	    System.err.println("No shapes are available!");
 	}
 
 	Scanner scan = new Scanner(System.in);
-	for (String shapeName : shapesList.keySet()) {
-	    System.out.println(shapeName);
-	}
 	System.out.println("Enter shape Name:");
+	for (int index = 0; index < shapesList.size(); index++) {
+	    System.out.println((index + 1) + ". " + shapesList.get(index));
+	}
+	
 
-	String inputShapeName = scan.nextLine().trim().toLowerCase();
-	Shape shape = shapesList.get(inputShapeName);
+	int inputShapeIndex = scan.nextInt()-1;
+	String shape = shapesList.get(inputShapeIndex);
 	if (shape == null)
 	    System.err.println("Wrong input");
 	scan.close();
-	return shape;
+	return ShapeFactory.createInstanceOfClass(shape);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+	    throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 	Console console = new Console();
 	ShapeListService sls = new ShapeListService();
 	Shape shape = console.getShape(sls.getList());
