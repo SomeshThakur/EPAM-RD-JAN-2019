@@ -1,10 +1,15 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Class ShapeListService.
+ */
 public class ShapeListService {
 
-    /*
-     * This service can be from file or db.
+    /**
+     * Gets the list.
+     *
+     * @return the list
      */
     public List<String> getList() {
 	List<String> shapesList = new ArrayList<>();
