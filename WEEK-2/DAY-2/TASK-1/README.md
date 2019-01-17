@@ -2,4 +2,4 @@
 
 #### Output :
 
-![Output](https://i.imgur.com/1cyOCSr.png)
+![Output](https://i.imgur.com/UJuNXDd.png)
