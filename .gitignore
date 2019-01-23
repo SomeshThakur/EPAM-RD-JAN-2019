@@ -1,5 +1,6 @@
 *.class
-
+.classpath
+.project
 .metadata
 bin/
 tmp/
