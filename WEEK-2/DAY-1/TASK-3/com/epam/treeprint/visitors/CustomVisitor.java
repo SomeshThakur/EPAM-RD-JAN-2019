@@ -1,19 +1,37 @@
-import java.io.File;
+package com.epam.treeprint.visitors;
+
 import java.io.IOException;
 import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class DirectoryTree extends SimpleFileVisitor<Path> {
+/**
+ * The Class CustomVisitor.
+ *
+ * @author Somesh_Thakur
+ */
+public class CustomVisitor extends SimpleFileVisitor<Path> {
+
+	/** The depth. */
 	private int depth = 0;
 
+	/**
+	 * Prints the depth delim.
+	 *
+	 * @param delim the delim
+	 */
 	private void printDepthDelim(String delim) {
 		for (int i = 0; i < depth; i++)
 			System.out.print(delim);
 	}
 
+	/*
+	 * 
+	 * 
+	 * @see java.nio.file.SimpleFileVisitor#preVisitDirectory(java.lang.Object,
+	 * java.nio.file.attribute.BasicFileAttributes)
+	 */
 	@Override
 	public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
 		printDepthDelim("|	");
@@ -22,6 +40,12 @@ public class DirectoryTree extends SimpleFileVisitor<Path> {
 		return super.preVisitDirectory(dir, attrs);
 	}
 
+	/*
+	 * 
+	 * 
+	 * @see java.nio.file.SimpleFileVisitor#postVisitDirectory(java.lang.Object,
+	 * java.io.IOException)
+	 */
 	@Override
 	public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
 
@@ -31,6 +55,11 @@ public class DirectoryTree extends SimpleFileVisitor<Path> {
 		return super.postVisitDirectory(dir, exc);
 	}
 
+	/*
+	 * 
+	 * @see java.nio.file.SimpleFileVisitor#visitFile(java.lang.Object,
+	 * java.nio.file.attribute.BasicFileAttributes)
+	 */
 	@Override
 	public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
 		printDepthDelim("|	");
@@ -39,18 +68,4 @@ public class DirectoryTree extends SimpleFileVisitor<Path> {
 
 	}
 
-	public static void main(String[] args) throws IOException {
-		if (args.length == 0) {
-			System.err.println("Error enter directory path as arg");
-			return;
-		}
-		DirectoryTree myPathVisitor = new DirectoryTree();
-		File tempFile = new File(args[0]);
-		if (!tempFile.isDirectory()) {
-			System.err.println("Error enter correct directory");
-			return;
-		}
-		Path myDir = tempFile.toPath();
-		Files.walkFileTree(myDir, myPathVisitor);
-	}
 }
