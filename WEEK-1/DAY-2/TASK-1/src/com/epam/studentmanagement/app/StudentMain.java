@@ -1,6 +1,7 @@
 package com.epam.studentmanagement.app;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.epam.studentmanagement.managers.StudentManagement;
@@ -20,12 +21,14 @@ public class StudentMain {
 	 */
 	protected final static List<Student> initializeStudents() {
 		List<Student> students = new ArrayList<>();
-		Student student1 = new Student("Emily", 23);
-		Student student2 = new Student("Brock", 25);
-		Student student3 = new Student("Jack", 21);
-		Student student4 = new Student("Rock", 22);
-		Student student5 = new Student("Jeny", 25);
-		Student student6 = new Student("David", 26);
+		String arr[] = { "A", "A", "A", "A" };
+		List<String> grades = Arrays.asList(arr);
+		Student student1 = new Student("Emily", 23, grades);
+		Student student2 = new Student("Brock", 25, grades);
+		Student student3 = new Student("Jack", 21, grades);
+		Student student4 = new Student("Rock", 22, grades);
+		Student student5 = new Student("Jeny", 25, grades);
+		Student student6 = new Student("David", 26, grades);
 		students.add(student1);
 		students.add(student2);
 		students.add(student3);
