@@ -1,4 +1,4 @@
-package com.epam.someshthakur.example.MavenDemoApp;
+package com.epam.mavendemo.MavenDemo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,6 +1,8 @@
 package com.epam.shapes.factory;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
@@ -36,8 +38,9 @@ public class ShapeFactory {
 	}
 
 	private static boolean isValidShape(String shapeName) throws IOException {
-		String root = System.getProperty("user.dir");
-		try (Stream<String> stream = Files.lines(Paths.get(root + "/shapes.txt"))) {
+		URL url = Thread.currentThread().getContextClassLoader().getResource("shapes.txt");
+		File shapesFile = new File(url.getFile());
+		try (Stream<String> stream = Files.lines(shapesFile.toPath())) {
 			return stream.anyMatch(s -> s.equalsIgnoreCase(shapeName));
 		}
 	}
