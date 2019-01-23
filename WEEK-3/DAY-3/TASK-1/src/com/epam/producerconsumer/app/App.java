@@ -10,7 +10,7 @@ import com.epam.producerconsumer.models.Producer;
 public class App {
 	public static void main(String[] args) {
 		// Creating BlockingQueue of size 10
-		BlockingQueue<Food> queue = new ArrayBlockingQueue<>(10);
+		BlockingQueue<Food> queue = new ArrayBlockingQueue<>(3);
 		Producer producer = new Producer(queue);
 		Consumer consumer = new Consumer(queue);
 		// Producer started producing
