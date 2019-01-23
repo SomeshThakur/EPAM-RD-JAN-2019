@@ -3,6 +3,7 @@ package com.epam.someshthakur.streamexamples;
 import java.util.IntSummaryStatistics;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -16,7 +17,7 @@ public class OddEvenStreams {
      * @param args the arguments
      */
 	public static void main(String[] args) {
-		Supplier<Stream<Integer>> supplier = () -> Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 11);
+		Supplier<Stream<Integer>> supplier = () ->  IntStream.range(1, 100).boxed();
 
 	Stream<Integer> oddStream = supplier.get().filter(num -> num % 2 != 0);
 	IntSummaryStatistics oddStat = oddStream.collect(Collectors.summarizingInt(num -> num));
