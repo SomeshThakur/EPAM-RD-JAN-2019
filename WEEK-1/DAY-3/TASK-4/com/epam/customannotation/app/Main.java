@@ -1,5 +1,19 @@
+package com.epam.customannotation.app;
 
-public class Utility {
+import com.epam.customannotation.annotations.Details;
+
+/**
+ * The Class Main.
+ *
+ * @author Somesh_Thakur
+ */
+public class Main {
+
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		ExampleOfAnnotation e = new ExampleOfAnnotation();
 		Class<? extends ExampleOfAnnotation> c = e.getClass();
