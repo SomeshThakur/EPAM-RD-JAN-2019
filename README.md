@@ -61,4 +61,4 @@
 | Tasks        | Description           | Links  |
 | ------------- |:-------------:| -----:|
 | Task-1      | Stream API | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3/DAY-2/TASK-1) |
-| Task-2      | Stream API | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3/DAY-2/TASK-2) |
+| Task-2      | Optionals | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3/DAY-2/TASK-2) |
