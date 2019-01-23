@@ -1,6 +1,22 @@
+package com.epam.immutableplanet.app;
 
+import com.epam.immutableplanet.controller.PlanetMaker;
+import com.epam.immutableplanet.models.Continent;
+import com.epam.immutableplanet.models.Ocean;
+import com.epam.immutableplanet.models.Planet;
+
+/**
+ * The Class SpaceShip.
+ *
+ * @author Somesh_Thakur
+ */
 public class SpaceShip {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		System.out.println("SpaceShip started..");
 		PlanetMaker planetMaker = new PlanetMaker();

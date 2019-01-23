@@ -1,13 +1,35 @@
-package Task2;
+package com.epam.unitconvertor.app;
 
 import java.util.Scanner;
 
+import com.epam.unitconvertor.interfaces.Unit;
+import com.epam.unitconvertor.models.Feet;
+import com.epam.unitconvertor.models.Inch;
+import com.epam.unitconvertor.models.Meter;
+import com.epam.unitconvertor.utilities.Converter;
+
+/**
+ * The Class ConverterMain.
+ * 
+ * @author Somesh_Thakur
+ */
 public class ConverterMain {
+
+	/** The choice. */
 	protected static int ch;
+
+	/** The value. */
 	protected static double value;
+
+	/** The unit. */
 	protected static Unit unit;
+
+	/** The scan. */
 	protected static Scanner scan = null;
 
+	/**
+	 * Printer to print menu.
+	 */
 	public static void printer() {
 		System.out.println("-----------------------------");
 		System.out.println("1. Meter");
@@ -16,7 +38,12 @@ public class ConverterMain {
 		System.out.println("Enter your length unit : ");
 	}
 
-	public static int init() {
+	/**
+	 * Inits the unit.
+	 *
+	 * @return the int
+	 */
+	public static int initUnit() {
 		ch = scan.nextInt();
 		switch (ch) {
 		case 1:
@@ -38,6 +65,12 @@ public class ConverterMain {
 		return 0;
 	}
 
+	/**
+	 * Conversion.
+	 *
+	 * @param converter the converter
+	 * @return the int
+	 */
 	public static int conversion(Converter converter) {
 		double result = 0;
 		ch = scan.nextInt();
@@ -59,11 +92,16 @@ public class ConverterMain {
 		return 0;
 	}
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
 		System.out.println("FROM");
 		printer();
-		if (init() == -1)
+		if (initUnit() == -1)
 			return;
 		System.out.println("TO");
 		printer();

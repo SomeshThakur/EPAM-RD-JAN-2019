@@ -1,9 +1,27 @@
+package com.epam.immutableplanet.controller;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import com.epam.immutableplanet.models.Continent;
+import com.epam.immutableplanet.models.Ocean;
+import com.epam.immutableplanet.models.Planet;
+
+/**
+ * The Class PlanetMaker.
+ *
+ * @author Somesh_Thakur
+ */
 public class PlanetMaker {
+
+	/** The planet. */
 	protected Planet planet;
 
+	/**
+	 * Make random planet.
+	 *
+	 * @return the planet
+	 */
 	public Planet makeRandomPlanet() {
 		List<Ocean> oceansList = makeRandomOceans();
 		List<Continent> continentsList = makeRandomContinents();
@@ -11,6 +29,11 @@ public class PlanetMaker {
 		return planet;
 	}
 
+	/**
+	 * Make random oceans.
+	 *
+	 * @return the list
+	 */
 	private List<Ocean> makeRandomOceans() {
 		List<Ocean> oceansList = new ArrayList<>();
 		oceansList.add(new Ocean("Ocean 1"));
@@ -20,6 +43,11 @@ public class PlanetMaker {
 		return oceansList;
 	}
 
+	/**
+	 * Make random continents.
+	 *
+	 * @return the list
+	 */
 	private List<Continent> makeRandomContinents() {
 		List<Continent> continentsList = new ArrayList<>();
 		continentsList.add(new Continent("Continent 1"));

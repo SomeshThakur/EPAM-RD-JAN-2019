@@ -1,11 +1,24 @@
-package Task1;
+package com.epam.studentmanagement.app;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.epam.studentmanagement.managers.StudentManagement;
+import com.epam.studentmanagement.models.Student;
+
+/**
+ * The Class StudentMain.
+ * 
+ * @author Somesh_Thakur
+ */
 public class StudentMain {
 
-	protected final static List<Student> initializeStudents(){
+	/**
+	 * Initialize students.
+	 *
+	 * @return the list
+	 */
+	protected final static List<Student> initializeStudents() {
 		List<Student> students = new ArrayList<>();
 		Student student1 = new Student("Emily", 23);
 		Student student2 = new Student("Brock", 25);
@@ -20,12 +33,18 @@ public class StudentMain {
 		students.add(student5);
 		students.add(student6);
 		return students;
-	} 
-	public static void main(String[] args){
+	}
+
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
+	public static void main(String[] args) {
 		StudentManagement sm = new StudentManagement(initializeStudents());
 		List<Student> students = sm.getStudents();
-		for(Student student:students){
-			System.out.println("Name: "+student.getName()+" Age: "+student.getAge());
+		for (Student student : students) {
+			System.out.println("Name: " + student.getName() + " Age: " + student.getAge());
 		}
 	}
 }
