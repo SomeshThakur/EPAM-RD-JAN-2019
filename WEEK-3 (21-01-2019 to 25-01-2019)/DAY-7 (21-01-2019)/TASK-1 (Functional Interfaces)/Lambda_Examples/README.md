@@ -1,0 +1,1 @@
+# Task : To Implement four or five functional Interfaces that are introduced in Java8. E.g. Supplier, function, Consumer, bifunction etc.
