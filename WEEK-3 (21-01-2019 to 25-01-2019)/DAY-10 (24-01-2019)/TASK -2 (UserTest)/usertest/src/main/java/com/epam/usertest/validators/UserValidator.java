@@ -1,6 +1,6 @@
 package com.epam.usertest.validators;
 
-import com.epam.usertest.constants.*;
+import com.epam.usertest.constants.UserNameContants;
 import com.epam.usertest.models.User;
 
 /**

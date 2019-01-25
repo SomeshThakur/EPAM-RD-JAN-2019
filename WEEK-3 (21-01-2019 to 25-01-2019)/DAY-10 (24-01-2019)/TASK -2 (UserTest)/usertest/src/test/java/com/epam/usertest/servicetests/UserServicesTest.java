@@ -1,7 +1,7 @@
 /**
  *  UserService Test Cases.
  */
-package com.epam.usertest.services;
+package com.epam.usertest.servicetests;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -14,7 +14,6 @@ import org.junit.jupiter.api.Test;
 import com.epam.usertest.models.User;
 import com.epam.usertest.services.UserSerivces;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class UserServicesTestCases.
  *

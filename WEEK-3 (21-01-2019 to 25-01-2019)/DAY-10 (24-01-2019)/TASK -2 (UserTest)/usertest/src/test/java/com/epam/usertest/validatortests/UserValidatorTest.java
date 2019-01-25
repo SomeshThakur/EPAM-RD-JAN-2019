@@ -1,7 +1,7 @@
 /**
  * UserValidator Test Cases.
  */
-package com.epam.usertest.validators;
+package com.epam.usertest.validatortests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import com.epam.usertest.models.User;
 import com.epam.usertest.validators.UserValidator;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class UserValidatorTest.
  *
@@ -45,8 +46,17 @@ class UserValidatorTest {
 	 * Test in valid user.
 	 */
 	@Test
-	public void testInValidUser() {
+	public void testInValidUserFirstName() {
 		user = new User("A", "Keny");
+		assertFalse(userValidator.validateName(user));
+	}
+
+	/**
+	 * Test in valid user last name.
+	 */
+	@Test
+	public void testInValidUserLastName() {
+		user = new User("John", "K");
 		assertFalse(userValidator.validateName(user));
 	}
 }
