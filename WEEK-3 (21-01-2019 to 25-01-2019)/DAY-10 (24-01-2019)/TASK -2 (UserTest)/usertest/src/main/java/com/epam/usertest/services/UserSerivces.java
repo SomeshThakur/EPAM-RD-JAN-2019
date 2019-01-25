@@ -5,7 +5,6 @@ package com.epam.usertest.services;
 
 import com.epam.usertest.models.User;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class UserSerivces.
  *
