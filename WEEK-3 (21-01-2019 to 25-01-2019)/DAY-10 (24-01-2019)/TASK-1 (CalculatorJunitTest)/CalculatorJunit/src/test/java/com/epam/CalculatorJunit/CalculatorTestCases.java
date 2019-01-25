@@ -1,43 +1,86 @@
 package com.epam.CalculatorJunit;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
-import com.epam.CalculatorJunit.exceptions.OutOfIntegerRange;
+import com.epam.calculatorJunit.Calculator;
+import com.epam.calculatorJunit.exceptions.OutOfIntegerRange;
 
 import org.junit.jupiter.api.BeforeAll;
 
+/**
+ * The Class CalculatorTestCases.
+ *
+ * @author Somesh_Thakur
+ */
 public class CalculatorTestCases {
+
+	/** The calculator. */
 	private static Calculator calculator;
 
+	/**
+	 * Inits the.
+	 */
 	@BeforeAll
 	static void init() {
 		calculator = new Calculator();
 	}
 
+	/**
+	 * Test addition.
+	 *
+	 * @throws OutOfIntegerRange the out of integer range
+	 */
 	@Test
-	public void testAddition() {
+	public void testAdditionPositive() throws OutOfIntegerRange {
 		int first = 100;
 		int second = 123456;
 		int expectedResult = first + second;
-		int result;
-		try {
-			result = calculator.add(first, second);
-			assertTrue(expectedResult == result);
-		} catch (OutOfIntegerRange e) {
-			System.out.println(e.getMessage());
-		}
+		int result = calculator.add(first, second);
+		assertEquals(expectedResult, result);
 
 	}
 
+	/**
+	 * Test addition negative.
+	 *
+	 * @throws OutOfIntegerRange the out of integer range
+	 */
 	@Test
-	public void testAddtionOutOfRange() {
+	public void testAdditionNegative() throws OutOfIntegerRange {
+		int first = -12023;
+		int second = -212;
+		int expectedResult = first + second;
+		int result = calculator.add(first, second);
+		assertEquals(expectedResult, result);
+	}
+
+	/**
+	 * Test addtion out of range.
+	 */
+	@Test
+	public void testAddtionPositiveOutOfRange() {
 		int first = Integer.MAX_VALUE;
 		int second = 1;
 		assertThrows(OutOfIntegerRange.class, () -> {
 			calculator.add(first, second);
 		});
 	}
+
+	/**
+	 * Test addtion negative out of range.
+	 */
+	@Test
+	public void testAddtionNegativeOutOfRange() {
+		int first = Integer.MIN_VALUE;
+		int second = -1;
+		Executable executable = () -> {
+			calculator.add(first, second);
+		};
+		assertThrows(OutOfIntegerRange.class, executable);
+	}
+
 }

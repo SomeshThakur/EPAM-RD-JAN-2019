@@ -1,4 +1,4 @@
-package com.epam.CalculatorJunit.exceptions;
+package com.epam.calculatorJunit.exceptions;
 
 public class OutOfIntegerRange extends Exception {
 
