@@ -1,22 +1,38 @@
 package com.epam.evenodd.models;
 
-import java.util.concurrent.locks.ReentrantLock;
-
+/**
+ * The Class Even.
+ *
+ * @author Somesh_Thakur
+ */
 public class Even implements Runnable {
-	ReentrantLock reentrantLock;
+
+	/** The printer. */
 	Printer printer;
 
-	public Even(ReentrantLock reentrantLock, Printer printer) {
-		this.reentrantLock = reentrantLock;
+	/** The max numbers. */
+	int maxNumbers;
+
+	/**
+	 * Instantiates a new even.
+	 *
+	 * @param printer    the printer
+	 * @param maxNumbers the max numbers
+	 */
+	public Even(Printer printer, int maxNumbers) {
 		this.printer = printer;
+		this.maxNumbers = maxNumbers;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Runnable#run()
+	 */
 	@Override
 	public void run() {
-		for (int i = 2; i < 11; i += 2) {
-			reentrantLock.lock();
+		for (int i = 2; i < maxNumbers; i += 2) {
 			printer.print(i);
-			reentrantLock.unlock();
 		}
 	}
 }
