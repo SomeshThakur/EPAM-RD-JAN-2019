@@ -1,69 +1,61 @@
 package com.epam.shapes.app;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-import com.epam.shapes.abstracts.Shape;
-import com.epam.shapes.factory.ShapeFactory;
-import com.epam.shapes.services.ShapeListService;
+import com.epam.shapes.model.Shape;
 
+// TODO: Auto-generated Javadoc
 /**
- * The Class Console.
- *
+ * Console class for input and output.
+ * 
+ * @author Nishant_Bansal
+ */
+/**
  * @author Somesh_Thakur
  *
  */
 public class Console {
 
 	/**
-	 * Gets the shape.
+	 * Gets the input in integer.
 	 *
-	 * @param shapesList the shapes list
-	 * @return the shape
+	 * @return the int input
 	 */
-	public Shape getShape(List<String> shapesList) {
-		Shape shape = null;
-		if (shapesList.isEmpty()) {
-			System.err.println("No shapes are available!");
+	public static int getIntInput() {
+		int shapeNumber;
+		try (Scanner scanner = new Scanner(System.in)) {
+			shapeNumber = scanner.nextInt();
 		}
-
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter shape Name:");
-		for (int index = 0; index < shapesList.size(); index++) {
-			System.out.println((index + 1) + ". " + shapesList.get(index));
-		}
-
-		int inputShapeIndex = scan.nextInt() - 1;
-
-		if (inputShapeIndex > shapesList.size() || inputShapeIndex < 0)
-			System.err.println("Wrong input");
-
-		String shapeName = shapesList.get(inputShapeIndex);
-		if (shapeName == null)
-			System.err.println("Wrong input");
-		scan.close();
-
-		try {
-			shape = ShapeFactory.createInstanceOfClass(shapeName);
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | IOException e) {
-			e.printStackTrace();
-		}
-		return shape;
+		return shapeNumber;
 	}
 
 	/**
-	 * The main method.
+	 * Draws shape.
 	 *
-	 * @param args the arguments
+	 * @param shape the shape
 	 */
-	public static void main(String[] args) {
-		Console console = new Console();
-		ShapeListService sls = new ShapeListService();
-		Shape shape = console.getShape(sls.getList());
-		if (shape == null)
-			return;
+	public static void drawShape(Shape shape) {
 		shape.draw();
+	}
 
+	/**
+	 * Prints the shape list.
+	 *
+	 * @param shapeNamesList list of shapes
+	 */
+	public static void printShapeList(List<String> shapeNamesList) {
+		for (String shapeName : shapeNamesList) {
+			System.out.println((shapeNamesList.indexOf(shapeName) + 1) + " " + shapeName);
+		}
+	}
+
+	/**
+	 * Prints the string.
+	 *
+	 * @param str the str
+	 */
+	public static void printlnString(String str) {
+		System.out.println(str);
 	}
 }

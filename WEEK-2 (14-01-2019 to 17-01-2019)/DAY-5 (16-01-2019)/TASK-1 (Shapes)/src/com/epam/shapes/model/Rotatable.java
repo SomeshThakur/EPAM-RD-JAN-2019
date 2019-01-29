@@ -1,4 +1,4 @@
-package com.epam.shapes.interfaces;
+package com.epam.shapes.model;
 
 /**
  * The Interface Rotatable.

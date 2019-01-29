@@ -1,7 +1,4 @@
-package com.epam.shapes.models;
-
-import com.epam.shapes.abstracts.Shape;
-import com.epam.shapes.interfaces.Rotatable;
+package com.epam.shapes.model;
 
 /**
  * The Class Square.

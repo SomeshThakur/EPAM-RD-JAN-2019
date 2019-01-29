@@ -1,4 +1,4 @@
-package com.epam.shapes.abstracts;
+package com.epam.shapes.model;
 
 /**
  * The Class Shape.
@@ -9,7 +9,7 @@ package com.epam.shapes.abstracts;
 public abstract class Shape {
 
 	/**
-	 * Draw.
+	 * Draw the shape.
 	 */
 	public abstract void draw();
 }
