@@ -56,7 +56,7 @@
 | ------------- |:-------------:| -----:|
 | Task-1      | Lambda Examples | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-7%20(21-01-2019)/TASK-1%20(Functional%20Interfaces)/Lambda_Examples) |
 
-- [Day 2](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-8%20(22-01-2019))
+- [Day 8](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-8%20(22-01-2019))
 
 | Tasks        | Description           | Links  |
 | ------------- |:-------------:| -----:|
