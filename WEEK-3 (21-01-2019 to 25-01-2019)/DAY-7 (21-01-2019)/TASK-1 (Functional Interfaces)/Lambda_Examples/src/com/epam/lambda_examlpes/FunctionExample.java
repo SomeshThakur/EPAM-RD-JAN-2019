@@ -1,4 +1,4 @@
-package com.epam.someshthakur.lambda_examlpes;
+package com.epam.lambda_examlpes;
 
 import java.util.ArrayList;
 import java.util.Arrays;

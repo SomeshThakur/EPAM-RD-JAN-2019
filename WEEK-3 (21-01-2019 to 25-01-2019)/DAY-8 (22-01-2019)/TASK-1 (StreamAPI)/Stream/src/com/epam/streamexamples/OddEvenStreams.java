@@ -1,4 +1,4 @@
-package com.epam.someshthakur.streamexamples;
+package com.epam.streamexamples;
 
 import java.util.IntSummaryStatistics;
 import java.util.function.Supplier;

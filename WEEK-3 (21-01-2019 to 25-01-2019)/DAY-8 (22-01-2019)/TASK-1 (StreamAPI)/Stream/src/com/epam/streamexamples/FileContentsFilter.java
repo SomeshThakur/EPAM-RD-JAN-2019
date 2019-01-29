@@ -1,7 +1,9 @@
-package com.epam.someshthakur.streamexamples;
+package com.epam.streamexamples;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.net.URLDecoder;
 import java.nio.file.Files;
 import java.util.stream.Stream;
 
@@ -17,8 +19,9 @@ public class FileContentsFilter {
 	 * The main method.
 	 *
 	 * @param args the arguments
+	 * @throws UnsupportedEncodingException
 	 */
-	public static void main(String args[]) {
+	public static void main(String args[]) throws UnsupportedEncodingException {
 		String root = System.getProperty("user.dir");
 		printFilteredStrings(root);
 	}
@@ -27,10 +30,11 @@ public class FileContentsFilter {
 	 * Prints the filtered strings.
 	 *
 	 * @param root the root
+	 * @throws UnsupportedEncodingException
 	 */
-	public static void printFilteredStrings(String root) {
+	public static void printFilteredStrings(String root) throws UnsupportedEncodingException {
 		URL url = Thread.currentThread().getContextClassLoader().getResource("stringTestFile");
-		File stringTestFile = new File(url.getFile());
+		File stringTestFile = new File(URLDecoder.decode(url.getFile(), "UTF-8"));
 
 		try (Stream<String> stream = Files.lines(stringTestFile.toPath())) {
 			stream.filter(s -> s.toLowerCase().contains(FILTER)).forEach(System.out::println);
