@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 import com.epam.shapes.model.Shape;
 
-// TODO: Auto-generated Javadoc
 /**
  * Console class for input and output.
  * 
