@@ -69,4 +69,6 @@
 | ------------- |:-------------:| -----:|
 | Task-1      | Blocking Queue | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-9%20(23-01-2019)/TASK-1%20(Blocking%20Queue)) |
 | Task-2      | Future and Executor | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-9%20(23-01-2019)/TASK-2%20(Future%20Executor)) |
-| Task-2      | Reentrant Lock | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-9%20(23-01-2019)/TASK-3%20(EvenOdd)) |
+| Task-3      | Reentrant Lock | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-9%20(23-01-2019)/TASK-3%20(EvenOdd)) |
+| Task-4      | JUnit Calculator | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-10%20(24-01-2019)/TASK-1%20(CalculatorJunitTest)) |
+| Task-5      | JUnit UserValidtor | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-10%20(24-01-2019)/TASK%20-2%20(UserTest)) |
