@@ -8,8 +8,10 @@ import com.epam.bank.model.Account;
 public class AccountManager {
 	private static List<Account> accountList = new ArrayList<Account>();;
 
-	public Account createAccount(String firstName, String lastName, int age, String address) {
-		return new Account(firstName, lastName, age, address);
+	public final Account createAccount(String firstName, String lastName, int age, String address) {
+		Account account =new Account(firstName, lastName, age, address); 
+		accountList.add(account);
+		return account; 
 	}
 
 }
