@@ -17,8 +17,8 @@ public class BiPredicateExample {
 	BiPredicateExample biPredicateExample = new BiPredicateExample();
 	Integer arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 	int result = 1;
-	for (int i : arr)
-	    result = biPredicateExample.operation(i, result, maxBiPredicate) ? i : result;
+	for (int number : arr)
+	    result = biPredicateExample.operation(number, result, maxBiPredicate) ? number : result;
 	System.out.println(result);
     }
 

@@ -9,7 +9,7 @@ public class AccountManager {
 	private static List<Account> accountList = new ArrayList<Account>();;
 
 	public final Account createAccount(String firstName, String lastName, int age, String address) {
-		Account account =new Account(firstName, lastName, age, address); 
+		Account account =new Account(); 
 		accountList.add(account);
 		return account; 
 	}
