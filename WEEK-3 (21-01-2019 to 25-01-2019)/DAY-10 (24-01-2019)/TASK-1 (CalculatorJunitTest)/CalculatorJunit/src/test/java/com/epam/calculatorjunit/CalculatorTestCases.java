@@ -1,4 +1,4 @@
-package com.epam.CalculatorJunit;
+package com.epam.calculatorjunit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -6,8 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-import com.epam.CalculatorJunit.Calculator;
-import com.epam.CalculatorJunit.exceptions.OutOfIntegerRange;
+import com.epam.calculatorjunit.Calculator;
+import com.epam.calculatorjunit.exception.OutOfIntegerRange;
+
 import org.junit.jupiter.api.BeforeAll;
 
 /**
