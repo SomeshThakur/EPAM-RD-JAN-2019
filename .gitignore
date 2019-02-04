@@ -1,6 +1,5 @@
 *.class
 *.log
-.project
 .metadata
 bin/
 tmp/
