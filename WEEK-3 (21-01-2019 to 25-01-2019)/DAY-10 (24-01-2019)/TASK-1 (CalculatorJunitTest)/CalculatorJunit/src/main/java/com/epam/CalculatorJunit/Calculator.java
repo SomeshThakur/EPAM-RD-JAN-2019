@@ -1,6 +1,6 @@
-package com.epam.calculatorJunit;
+package com.epam.CalculatorJunit;
 
-import com.epam.calculatorJunit.exceptions.OutOfIntegerRange;
+import com.epam.CalculatorJunit.exceptions.OutOfIntegerRange;
 
 /**
  * The Class Calculator.
