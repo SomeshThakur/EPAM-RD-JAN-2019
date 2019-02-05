@@ -1,4 +1,5 @@
-package com.epam.streamexamples;
+package com.epam.streams;
+
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;

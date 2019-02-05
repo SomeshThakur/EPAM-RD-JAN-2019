@@ -2,7 +2,6 @@ package com.epam.bank.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -11,7 +10,6 @@ import com.epam.bank.bean.Customer;
 import com.epam.bank.exception.AccountNotFoundException;
 import com.epam.bank.util.AccountStatus;
 import com.epam.bank.util.AccountType;
-import com.epam.bank.util.GenderType;
 
 /**
  * The Class MockAccountDao.

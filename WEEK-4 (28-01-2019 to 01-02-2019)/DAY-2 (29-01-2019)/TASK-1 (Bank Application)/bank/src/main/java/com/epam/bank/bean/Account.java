@@ -7,7 +7,6 @@ import com.epam.bank.service.AccountNumberGenerator;
 import com.epam.bank.util.AccountStatus;
 import com.epam.bank.util.AccountType;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class Account.
  * 
