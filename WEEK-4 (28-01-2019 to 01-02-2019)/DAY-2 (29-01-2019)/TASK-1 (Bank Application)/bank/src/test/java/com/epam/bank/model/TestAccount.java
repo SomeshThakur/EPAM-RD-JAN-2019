@@ -11,13 +11,12 @@ import org.junit.jupiter.api.Test;
 import com.epam.bank.bean.Account;
 import com.epam.bank.bean.Customer;
 import com.epam.bank.dao.AccountDao;
-import com.epam.bank.dao.AccountType;
 import com.epam.bank.dao.MockAccountDao;
 import com.epam.bank.exception.AccountNotFoundException;
 import com.epam.bank.exception.InvalidTransactionException;
+import com.epam.bank.util.AccountType;
 import com.epam.bank.util.GenderType;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class TestAccount.
  * 
@@ -61,6 +60,7 @@ class TestAccount {
 	public void testExistingAccountDeletion() {
 		Account account = accountDaoImpl.createAccount(customer, AccountType.SAVINGS);
 		assertTrue(accountDaoImpl.deleteAccount(account));
+		assertFalse(accountDaoImpl.deleteAccount(account));
 	}
 
 	/**

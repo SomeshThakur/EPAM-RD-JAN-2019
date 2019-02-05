@@ -1,4 +1,4 @@
-package com.epam.bank.dao;
+package com.epam.bank.util;
 
 public enum AccountType {
 	SAVINGS, CURRENT

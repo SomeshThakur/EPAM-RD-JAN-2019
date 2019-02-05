@@ -1,10 +1,9 @@
 package com.epam.bank.dao;
 
-import java.util.List;
-
 import com.epam.bank.bean.Account;
 import com.epam.bank.bean.Customer;
 import com.epam.bank.exception.AccountNotFoundException;
+import com.epam.bank.util.AccountType;
 
 public interface AccountDao {
 

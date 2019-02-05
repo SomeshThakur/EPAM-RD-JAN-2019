@@ -10,6 +10,7 @@ import com.epam.bank.bean.Account;
 import com.epam.bank.bean.Customer;
 import com.epam.bank.exception.AccountNotFoundException;
 import com.epam.bank.util.AccountStatus;
+import com.epam.bank.util.AccountType;
 import com.epam.bank.util.GenderType;
 
 /**

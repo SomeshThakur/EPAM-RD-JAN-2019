@@ -2,10 +2,10 @@ package com.epam.bank.bean;
 
 import java.math.BigDecimal;
 
-import com.epam.bank.dao.AccountType;
 import com.epam.bank.exception.InvalidTransactionException;
 import com.epam.bank.service.AccountNumberGenerator;
 import com.epam.bank.util.AccountStatus;
+import com.epam.bank.util.AccountType;
 
 // TODO: Auto-generated Javadoc
 /**
