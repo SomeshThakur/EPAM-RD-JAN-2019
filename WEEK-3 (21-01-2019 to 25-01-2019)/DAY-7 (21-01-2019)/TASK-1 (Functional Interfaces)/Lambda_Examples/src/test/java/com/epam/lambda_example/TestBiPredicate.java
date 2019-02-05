@@ -11,18 +11,29 @@ import org.junit.jupiter.api.Test;
 
 import com.epam.lambda_examlpes.BiPredicateExample;
 
+// TODO: Auto-generated Javadoc
 /**
+ * The Class TestBiPredicate.
+ * 
  * @author Somesh_Thakur
  *
  */
 class TestBiPredicate {
+
+	/** The bi predicate example. */
 	static BiPredicateExample biPredicateExample;
 
+	/**
+	 * Inits the.
+	 */
 	@BeforeAll
 	public static void init() {
 		biPredicateExample = new BiPredicateExample();
 	}
 
+	/**
+	 * Test max bi predicate.
+	 */
 	@Test
 	@DisplayName("Test Bi Predicate for Max Number")
 	public void testMaxBiPredicate() {
@@ -31,6 +42,9 @@ class TestBiPredicate {
 		assertEquals(67, result);
 	}
 
+	/**
+	 * Test min bi predicate.
+	 */
 	@Test
 	@DisplayName("Test Bi Predicate for Min Number")
 	public void testMinBiPredicate() {
@@ -39,6 +53,9 @@ class TestBiPredicate {
 		assertEquals(1, result);
 	}
 
+	/**
+	 * Test max neg bi predicate.
+	 */
 	@Test
 	@DisplayName("Test Bi Predicate for Max Negative Number")
 	public void testMaxNegBiPredicate() {
@@ -47,6 +64,9 @@ class TestBiPredicate {
 		assertEquals(-1, result);
 	}
 
+	/**
+	 * Test min neg bi predicate.
+	 */
 	@Test
 	@DisplayName("Test Bi Predicate for Min Negative Number")
 	public void testMinNegBiPredicate() {

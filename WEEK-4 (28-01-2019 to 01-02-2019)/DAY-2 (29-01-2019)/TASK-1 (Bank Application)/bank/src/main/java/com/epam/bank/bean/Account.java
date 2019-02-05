@@ -64,24 +64,6 @@ public class Account {
 	}
 
 	/**
-	 * Gets the customer.
-	 *
-	 * @return the customer
-	 */
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	/**
-	 * Gets the account type.
-	 *
-	 * @return the account type
-	 */
-	public AccountType getAccountType() {
-		return accountType;
-	}
-
-	/**
 	 * Gets the status.
 	 *
 	 * @return the status

@@ -1,14 +1,12 @@
 package com.epam.lambda_example;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 import java.util.function.Consumer;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,13 +19,13 @@ import com.epam.lambda_examlpes.ConsumerExample;
  * @author Somesh_Thakur
  *
  */
-class TestConsumer {
+class TestConsumerExample {
 
 	/** The consumer example. */
 	private static ConsumerExample consumerExample;
 
 	/**
-	 * Inits the.
+	 * Inits.
 	 */
 	@BeforeAll
 	public static void init() {
