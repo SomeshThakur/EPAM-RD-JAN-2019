@@ -1,9 +1,9 @@
 package com.epam.immutableplanet.app;
 
-import com.epam.immutableplanet.controller.PlanetMaker;
 import com.epam.immutableplanet.models.Continent;
 import com.epam.immutableplanet.models.Ocean;
 import com.epam.immutableplanet.models.Planet;
+import com.epam.immutableplanet.service.PlanetMaker;
 
 /**
  * The Class SpaceShip.

@@ -1,4 +1,4 @@
-package com.epam.immutableplanet.controller;
+package com.epam.immutableplanet.service;
 
 import java.util.ArrayList;
 import java.util.List;

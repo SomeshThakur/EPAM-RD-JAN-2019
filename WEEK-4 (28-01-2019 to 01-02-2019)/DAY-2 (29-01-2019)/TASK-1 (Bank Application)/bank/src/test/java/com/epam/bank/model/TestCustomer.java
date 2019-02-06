@@ -87,7 +87,7 @@ class TestCustomer {
 		Customer customer = customerDao.createCustomer(name, age, GenderType.MALE);
 		customer.setName("XYZASGFDGHS");
 		customerDao.updateCustomer(customer);
-		Customer customerRetrieved = customerDao.getCustomerById(1);
+		Customer customerRetrieved = customerDao.getCustomerById(customer.getId());
 		assertEquals(customer.getName(), customerRetrieved.getName());
 	}
 }
