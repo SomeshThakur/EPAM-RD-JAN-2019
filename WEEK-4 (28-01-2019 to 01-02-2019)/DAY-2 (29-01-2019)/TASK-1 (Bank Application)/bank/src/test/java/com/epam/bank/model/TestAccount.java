@@ -15,7 +15,6 @@ import com.epam.bank.dao.MockAccountDao;
 import com.epam.bank.exception.AccountNotFoundException;
 import com.epam.bank.exception.InvalidTransactionException;
 import com.epam.bank.util.AccountType;
-import com.epam.bank.util.GenderType;
 
 /**
  * The Class TestAccount.
@@ -37,7 +36,7 @@ class TestAccount {
 	@BeforeAll
 	public static void init() {
 		accountDaoImpl = new MockAccountDao();
-		customer = new Customer("", "", 1, GenderType.MALE, "");
+		customer = new Customer();
 		accountDaoImpl.createAccount(customer, AccountType.SAVINGS);
 	}
 

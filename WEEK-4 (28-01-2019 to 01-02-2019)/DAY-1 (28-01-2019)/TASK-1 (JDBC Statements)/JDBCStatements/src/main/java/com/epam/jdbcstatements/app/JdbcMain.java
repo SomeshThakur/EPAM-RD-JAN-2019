@@ -3,8 +3,6 @@ package com.epam.jdbcstatements.app;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-
 import com.epam.jdbcstatements.database.EmployeeDB;
 import com.epam.jdbcstatements.util.DBConnection;
 
