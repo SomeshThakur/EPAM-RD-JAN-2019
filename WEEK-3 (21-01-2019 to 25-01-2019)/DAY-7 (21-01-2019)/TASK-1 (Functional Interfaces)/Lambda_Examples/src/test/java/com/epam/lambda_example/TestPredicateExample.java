@@ -11,15 +11,27 @@ import org.junit.jupiter.api.Test;
 
 import com.epam.lambda_examlpes.PredicateExample;
 
+/**
+ * The Class TestPredicateExample.
+ *
+ * @author Somesh_Thakur
+ */
 class TestPredicateExample {
 
+	/** The predicate example. */
 	private static PredicateExample predicateExample;
 
+	/**
+	 * Inits.
+	 */
 	@BeforeAll
 	private static void init() {
 		predicateExample = new PredicateExample();
 	}
 
+	/**
+	 * Test predicate starts with A.
+	 */
 	@Test
 	@DisplayName("Test Predicate to filter string which starts with a")
 	public void testPredicateStartsWithA() {

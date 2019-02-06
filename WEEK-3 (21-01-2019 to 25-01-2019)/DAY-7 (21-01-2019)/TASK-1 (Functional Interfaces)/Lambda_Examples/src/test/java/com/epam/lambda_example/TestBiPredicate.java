@@ -11,7 +11,6 @@ import org.junit.jupiter.api.Test;
 
 import com.epam.lambda_examlpes.BiPredicateExample;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class TestBiPredicate.
  * 

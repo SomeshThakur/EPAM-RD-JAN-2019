@@ -26,7 +26,7 @@ class TestOptionals {
 	String nullString = null;
 
 	/**
-	 * Inits the.
+	 * Inits.
 	 */
 	@BeforeAll
 	public static void init() {
