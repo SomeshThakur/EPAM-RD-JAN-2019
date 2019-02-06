@@ -10,32 +10,32 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
- * The Class TestDistinctStrings.
+ * The Class TestFileContentFilter.
  *
  * @author Somesh_Thakur
  */
-class TestDistinctStrings {
+class TestFileContentFilter {
 
-	/** The distinct string stream. */
-	private static DistinctStringStream distinctStringStream;
+	/** The contents filter. */
+	static FileContentsFilter contentsFilter;
 
 	/**
 	 * Inits the.
 	 */
 	@BeforeAll
 	public static void init() {
-		distinctStringStream = new DistinctStringStream();
+		contentsFilter = new FileContentsFilter();
 	}
 
 	/**
-	 * Test distinct strings list.
+	 * Test file filter.
 	 *
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	@Test
-	@DisplayName("Test Distinct String list")
-	public void testDistinctStringsList() throws IOException {
-		List<String> files = distinctStringStream.getDistinctStrings("studentNames");
-		assertEquals(5, files.size());
+	@DisplayName("Test File content filter")
+	public void testFileFilter() throws IOException {
+		List<String> filteredStrings = contentsFilter.printFilteredStrings("stringTestFile", "java");
+		assertEquals(3, filteredStrings.size());
 	}
 }

@@ -1,11 +1,12 @@
 package com.epam.streams;
 
-
 import java.io.File;
-import java.io.UnsupportedEncodingException;
+import java.io.IOException;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.nio.file.Files;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -13,34 +14,20 @@ import java.util.stream.Stream;
  */
 public class FileContentsFilter {
 
-	/** The Constant FILTER. */
-	private final static String FILTER = "java";
-
-	/**
-	 * The main method.
-	 *
-	 * @param args the arguments
-	 * @throws UnsupportedEncodingException
-	 */
-	public static void main(String args[]) throws UnsupportedEncodingException {
-		String root = System.getProperty("user.dir");
-		printFilteredStrings(root);
-	}
-
 	/**
 	 * Prints the filtered strings.
 	 *
 	 * @param root the root
-	 * @throws UnsupportedEncodingException
+	 * @return
+	 * @throws IOException
 	 */
-	public static void printFilteredStrings(String root) throws UnsupportedEncodingException {
-		URL url = Thread.currentThread().getContextClassLoader().getResource("stringTestFile");
-		File stringTestFile = new File(URLDecoder.decode(url.getFile(), "UTF-8"));
+	public List<String> printFilteredStrings(String fileName, String filter) throws IOException {
+		URL url = Thread.currentThread().getContextClassLoader().getResource(fileName);
+		String path = URLDecoder.decode(url.getFile(), "UTF-8");
+		File stringTestFile = new File(path);
 
 		try (Stream<String> stream = Files.lines(stringTestFile.toPath())) {
-			stream.filter(s -> s.toLowerCase().contains(FILTER)).forEach(System.out::println);
-		} catch (Exception e) {
-			e.printStackTrace();
+			return stream.filter(s -> s.toLowerCase().contains(filter)).collect(Collectors.toList());
 		}
 	}
 
