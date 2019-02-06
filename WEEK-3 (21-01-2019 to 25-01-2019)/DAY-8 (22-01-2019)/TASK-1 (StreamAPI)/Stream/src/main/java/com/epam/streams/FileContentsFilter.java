@@ -21,7 +21,7 @@ public class FileContentsFilter {
 	 * @return
 	 * @throws IOException
 	 */
-	public List<String> printFilteredStrings(String fileName, String filter) throws IOException {
+	public List<String> getFilteredStrings(String fileName, String filter) throws IOException {
 		URL url = Thread.currentThread().getContextClassLoader().getResource(fileName);
 		String path = URLDecoder.decode(url.getFile(), "UTF-8");
 		File stringTestFile = new File(path);

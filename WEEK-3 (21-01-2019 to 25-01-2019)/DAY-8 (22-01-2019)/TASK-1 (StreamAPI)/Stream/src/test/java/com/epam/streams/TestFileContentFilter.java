@@ -35,7 +35,7 @@ class TestFileContentFilter {
 	@Test
 	@DisplayName("Test File content filter")
 	public void testFileFilter() throws IOException {
-		List<String> filteredStrings = contentsFilter.printFilteredStrings("stringTestFile", "java");
+		List<String> filteredStrings = contentsFilter.getFilteredStrings("stringTestFile", "java");
 		assertEquals(3, filteredStrings.size());
 	}
 }
