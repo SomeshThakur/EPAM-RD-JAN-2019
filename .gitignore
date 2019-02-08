@@ -1,6 +1,7 @@
 *.class
 *.log
 .metadata
+.sonarlint
 bin/
 tmp/
 *.tmp
