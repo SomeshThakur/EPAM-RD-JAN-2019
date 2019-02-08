@@ -1,27 +1,70 @@
 package com.epam.bank.service;
 
-import java.util.stream.Stream;
-
 import com.epam.bank.bean.Customer;
 import com.epam.bank.constants.CustomerContants;
-import com.epam.bank.util.GenderType;
 
+/**
+ * The Class CustomerValidator.
+ *
+ * @author Somesh_Thakur
+ */
 public class CustomerValidator {
 
-	public static boolean verify(Customer customer) {
-		return verifyName(customer.getName()) && verifyAge(customer.getAge()) && verifyGender(customer.getGender());
-	}
+  /**
+   * Instantiates a new customer validator.
+   */
+  private CustomerValidator() {
 
-	private static boolean verifyGender(GenderType gender) {
-		return Stream.of(GenderType.values()).anyMatch(g -> g == gender);
-	}
+  }
 
-	private static boolean verifyAge(int age) {
-		return age < CustomerContants.MAX_AGE && age >= CustomerContants.MIN_AGE;
-	}
+  /**
+   * Verify.
+   *
+   * @param customer the customer
+   * @return true, if successful
+   */
+  public static boolean verify(Customer customer) {
+    return verifyName(customer.getName()) && verifyAge(customer.getAge());
+  }
 
-	private static boolean verifyName(String name) {
-		return (name.length() > CustomerContants.MIN_NAME_LENGTH && name.length() < CustomerContants.MAX_NAME_LENGTH);
-	}
+  /**
+   * Verify age.
+   *
+   * @param age the age
+   * @return true, if successful
+   */
+  private static boolean verifyAge(int age) {
+    return age < CustomerContants.MAX_AGE && age >= CustomerContants.MIN_AGE;
+  }
+
+  /**
+   * Verify name.
+   *
+   * @param name the name
+   * @return true, if successful
+   */
+  private static boolean verifyName(String name) {
+    return (minLen(name) && maxLen(name));
+  }
+
+  /**
+   * Max len.
+   *
+   * @param name the name
+   * @return true, if successful
+   */
+  private static boolean maxLen(String name) {
+    return name.length() < CustomerContants.MAX_NAME_LENGTH;
+  }
+
+  /**
+   * Min len.
+   *
+   * @param name the name
+   * @return true, if successful
+   */
+  private static boolean minLen(String name) {
+    return name.length() > CustomerContants.MIN_NAME_LENGTH;
+  }
 
 }

@@ -1,20 +1,21 @@
-/**
- * 
- */
 package com.epam.bank.exception;
 
 /**
- * @author Somesh_Thakur
+ * The Class InvalidCustomer.
  *
+ * @author Somesh_Thakur
  */
 public class InvalidCustomer extends Exception {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -437765895320331833L;
+  /** The Constant serialVersionUID. */
+  private static final long serialVersionUID = -437765895320331833L;
 
-	public InvalidCustomer(String msg) {
-		super(msg);
-	}
+  /**
+   * Instantiates a new invalid customer.
+   *
+   * @param msg the msg
+   */
+  public InvalidCustomer(String msg) {
+    super(msg);
+  }
 }

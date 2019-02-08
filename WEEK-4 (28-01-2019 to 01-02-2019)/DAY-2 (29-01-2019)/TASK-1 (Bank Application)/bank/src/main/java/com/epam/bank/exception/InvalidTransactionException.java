@@ -5,10 +5,10 @@ package com.epam.bank.exception;
  */
 public class InvalidTransactionException extends Exception {
 
-	/** The Constant serialVersionUID. */
-	private static final long serialVersionUID = 4989560077410934018L;
+  /** The Constant serialVersionUID. */
+  private static final long serialVersionUID = 4989560077410934018L;
 
-	public InvalidTransactionException(String message) {
-		super(message);
-	}
+  public InvalidTransactionException(String message) {
+    super(message);
+  }
 }

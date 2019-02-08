@@ -31,6 +31,7 @@ public class Producer implements Runnable {
 		// Producing Food
 		for (int i = 0; i < 10; i++) {
 			Food msg = new Food("" + i);
+
 			try {
 				Thread.sleep(i);
 				queue.put(msg);

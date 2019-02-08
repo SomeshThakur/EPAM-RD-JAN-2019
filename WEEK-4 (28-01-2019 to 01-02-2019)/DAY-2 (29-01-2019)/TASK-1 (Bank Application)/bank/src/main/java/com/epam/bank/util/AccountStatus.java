@@ -1,5 +1,14 @@
 package com.epam.bank.util;
 
+/**
+ * The Enum AccountStatus.
+ *
+ * @author Somesh_Thakur
+ */
 public enum AccountStatus {
-	ACTIVE, INACTIVE
+
+  /** The active. */
+  ACTIVE,
+  /** The inactive. */
+  INACTIVE
 }

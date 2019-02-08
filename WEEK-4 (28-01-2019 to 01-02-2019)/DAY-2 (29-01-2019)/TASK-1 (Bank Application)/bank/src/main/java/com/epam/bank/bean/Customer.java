@@ -3,48 +3,104 @@ package com.epam.bank.bean;
 import com.epam.bank.service.CustomerIdGenerator;
 import com.epam.bank.util.GenderType;
 
+/**
+ * The Class Customer.
+ *
+ * @author Somesh_Thakur
+ */
 public class Customer {
-	private String name;
-	private int age;
-	private GenderType gender;
-	private final int id;
 
-	public Customer() {
-		id = CustomerIdGenerator.generate();
-	}
+  /** The name. */
+  private String name;
 
-	public Customer(Customer customer) {
-		setName(customer.name);
-		setAge(customer.age);
-		setGender(customer.gender);
-		this.id = customer.getId();
-	}
+  /** The age. */
+  private int age;
 
-	public void setGender(GenderType gender) {
-		this.gender = gender;
-	}
+  /** The gender. */
+  private GenderType gender;
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+  /** The id. */
+  private final int id;
 
-	public String getName() {
-		return name;
-	}
+  /**
+   * Instantiates a new customer.
+   */
+  public Customer() {
+    id = CustomerIdGenerator.generate();
+  }
 
-	public int getAge() {
-		return age;
-	}
+  /**
+   * Instantiates a new customer.
+   *
+   * @param customer the customer
+   */
+  public Customer(Customer customer) {
+    setName(customer.name);
+    setAge(customer.age);
+    setGender(customer.gender);
+    this.id = customer.getId();
+  }
 
-	public GenderType getGender() {
-		return gender;
-	}
+  /**
+   * Sets the gender.
+   *
+   * @param gender the new gender
+   */
+  public void setGender(GenderType gender) {
+    this.gender = gender;
+  }
 
-	public int getId() {
-		return id;
-	}
+  /**
+   * Sets the age.
+   *
+   * @param age the new age
+   */
+  public void setAge(int age) {
+    this.age = age;
+  }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+  /**
+   * Gets the name.
+   *
+   * @return the name
+   */
+  public String getName() {
+    return name;
+  }
+
+  /**
+   * Gets the age.
+   *
+   * @return the age
+   */
+  public int getAge() {
+    return age;
+  }
+
+  /**
+   * Gets the gender.
+   *
+   * @return the gender
+   */
+  public GenderType getGender() {
+    return gender;
+  }
+
+  /**
+   * Gets the id.
+   *
+   * @return the id
+   */
+  public int getId() {
+    return id;
+  }
+
+  /**
+   * Sets the name.
+   *
+   * @param name the new name
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
 }

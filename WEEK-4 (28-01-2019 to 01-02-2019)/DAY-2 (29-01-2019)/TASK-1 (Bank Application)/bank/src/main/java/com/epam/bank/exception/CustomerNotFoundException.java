@@ -2,12 +2,10 @@ package com.epam.bank.exception;
 
 public class CustomerNotFoundException extends Exception {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 6828791525962516765L;
+  /** Auto Generated UID. */
+  private static final long serialVersionUID = 6828791525962516765L;
 
-	public CustomerNotFoundException(String msg) {
-		super(msg);
-	}
+  public CustomerNotFoundException(String msg) {
+    super(msg);
+  }
 }
