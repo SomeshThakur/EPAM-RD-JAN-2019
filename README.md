@@ -77,3 +77,22 @@
 | ------------- |:-------------:| -----:|
 | Task-2      | JUnit Calculator | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-10%20(24-01-2019)/TASK-1%20(CalculatorJunitTest)) |
 | Task-1      | JUnit UserValidtor | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-10%20(24-01-2019)/TASK%20-2%20(UserTest)) |
+
+#### [ Week-4 ](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019))
+- [Day 11](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019)/DAY-1%20(28-01-2019))
+
+| Tasks        | Description           | Links  |
+| ------------- |:-------------:| -----:|
+| Task-1      | JDBC Forward Backward | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019)/DAY-1%20(28-01-2019)/TASK-1%20(JDBC%20Statements)) |
+
+- [Day 12](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019)/DAY-2%20(29-01-2019))
+
+| Tasks        | Description           | Links  |
+| ------------- |:-------------:| -----:|
+| Task-1      |Bank Application | [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019)/DAY-2%20(29-01-2019)/TASK-1%20(Bank%20Application)/bank) |
+
+- [Day 13](https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-3%20(21-01-2019%20to%2025-01-2019)/DAY-9%20(23-01-2019))
+
+| Tasks        | Description           | Links  |
+| ------------- |:-------------:| -----:|
+| Task-1      | Evaluate Student Performance| [ More Info ] (https://git.epam.com/Somesh_Thakur/EPAM-RD-JAN-2019/tree/master/WEEK-4%20(28-01-2019%20to%2001-02-2019)/DAY-3%20(31-01-2019)/Task-1%20(Student%20Performance)) |
