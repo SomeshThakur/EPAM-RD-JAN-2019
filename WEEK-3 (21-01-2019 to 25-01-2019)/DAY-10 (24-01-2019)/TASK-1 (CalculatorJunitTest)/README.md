@@ -1,0 +1,1 @@
+# Task : To create a calculator using Junit test cases for adding two number and if the result is out of range then throw an exception.
