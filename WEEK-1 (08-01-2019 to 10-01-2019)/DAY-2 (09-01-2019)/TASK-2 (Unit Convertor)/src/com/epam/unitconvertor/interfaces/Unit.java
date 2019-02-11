@@ -8,24 +8,24 @@ package com.epam.unitconvertor.interfaces;
  */
 public interface Unit {
 
-	/**
-	 * Gets the value.
-	 *
-	 * @return the value
-	 */
-	public double getValue();
+  /**
+   * Gets the value.
+   *
+   * @return the value
+   */
+  public double getValue();
 
-	/**
-	 * Sets the value.
-	 *
-	 * @param value the new value
-	 */
-	public void setValue(double value);
+  /**
+   * Sets the value.
+   *
+   * @param value the new value
+   */
+  public void setValue(double value);
 
-	/**
-	 * Gets the con value.
-	 *
-	 * @return the double
-	 */
-	public double _getConValue();
+  /**
+   * Gets the con value.
+   *
+   * @return the double
+   */
+  public double getConValue();
 }

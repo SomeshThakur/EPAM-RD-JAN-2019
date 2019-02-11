@@ -12,7 +12,6 @@ import com.epam.bank.util.GenderType;
  * @author Somesh_Thakur
  */
 public class CustomerService {
-
   /** The customer dao. */
   private CustomerDao customerDao;
 
@@ -40,6 +39,7 @@ public class CustomerService {
     customer.setAge(age);
     customer.setGender(gender);
     if (!CustomerValidator.verify(customer)) {
+
       throw new InvalidCustomer("Invalid Details");
     }
     customerDao.save(customer);
