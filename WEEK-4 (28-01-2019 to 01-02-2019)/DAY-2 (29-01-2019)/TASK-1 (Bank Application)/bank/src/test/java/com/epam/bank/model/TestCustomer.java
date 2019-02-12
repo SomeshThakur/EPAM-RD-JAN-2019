@@ -29,6 +29,8 @@ class TestCustomer {
 
   /** The customer dao. */
   static CustomerService customerService;
+
+  /** The customer dao. */
   static CustomerDao customerDao;
 
   /**
@@ -57,7 +59,7 @@ class TestCustomer {
   }
 
   /**
-   * Test in valid details customer.
+   * Test in valid customer name.
    */
   @Test
   @DisplayName("Test Invalid Customer Name Validation")
@@ -67,10 +69,42 @@ class TestCustomer {
     assertThrows(InvalidCustomer.class, createCustomer(name, age));
   }
 
+  /**
+   * Test in valid customer age max.
+   */
+  @Test
+  @DisplayName("Test Invalid Customer Age Max Validation")
+  public void testInValidCustomerAgeMax() {
+    String name = "abcdef";
+    int age = 10000;
+    assertThrows(InvalidCustomer.class, createCustomer(name, age));
+  }
+
+  /**
+   * Test in valid customer age min.
+   */
+  @Test
+  @DisplayName("Test Invalid Customer Min Validation")
+  public void testInValidCustomerAgeMin() {
+    String name = "abcasdsfdvgdfvdsfdfs";
+    int age = 0;
+    assertThrows(InvalidCustomer.class, createCustomer(name, age));
+  }
+
+  /**
+   * Creates the customer.
+   *
+   * @param name the name
+   * @param age  the age
+   * @return the executable
+   */
   private Executable createCustomer(String name, int age) {
     return () -> customerService.createCustomer(name, age, GenderType.MALE);
   }
 
+  /**
+   * Test in valid customer age.
+   */
   @Test
   @DisplayName("Test Invalid Customer Age Validation")
   public void testInValidCustomerAge() {
